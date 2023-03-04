@@ -1,0 +1,44 @@
+@use 'variables' as v;
+.card{
+    border: 5px solid red;
+    width: 300px;
+    height: 250px;
+    border-radius: 24px;
+    background-color: v.$primaryColor4;
+    box-shadow: 3px 3px 15px;
+    padding: 48px 12px 12 px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__name{
+        background-color: v.$primaryColor5;
+        text-align: center;
+        color: aliceblue;
+        position: absolute;
+        top: -20px;
+        right: 0px;
+        padding: 6px 12px;
+        z-index: 10;
+    }
+    &__circle{
+        border: 5px solid blue;
+        background-color: v.$primaryColor3;
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 50px;
+    }
+    &__img{
+        width: 100%;    
+    }
+    &:hover{
+        transition: 200ms;
+        transform: translateY(10px);
+    }
+
+}
